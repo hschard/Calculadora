@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Caacupe+One&family=Electrolize&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*Reset CSS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Electrolize", sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background: url(./assets/Purple.gif);
+    background-size: contain;
+    background-position-x: center;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 16.5vw;
+    height: 43vh;
+    border: black;
+    border-radius: 12px;
+}
+
+.inputOut {
+    background-color: rgb(142, 54, 224);
+    color: whitesmoke;
+    text-align: right;
+    width: 180px;
+    height: 25px;
+    margin-top: 15px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    outline: none;
+    padding-right: 4px ;
+}
+
+.box-numbers {
+    display: block;
+    margin: 5px;
+}
+
+.insert {
+    margin: 0.3em;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 10px;
+    border: 0.2px solid white;
+    color: rgb(142, 54, 224);
+    background-color: black;
+}
+
+.result {
+    width: 165px;
+    height: 23px;
+    margin: 15px auto;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(107, 46, 221, 0.726);
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#plus, #minus, #times, #split {
+    background-color: rgba(196, 145, 4, 0.699);
+    color: white;
+    font-weight: 600;
+}
+
+#plus:hover, #minus:hover, #times:hover, #split:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
