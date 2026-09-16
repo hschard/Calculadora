@@ -27,8 +27,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 16.5vw;
-    height: 43vh;
+    width: 220px;
+    height: 260px;
     border: black;
     border-radius: 12px;
 }
