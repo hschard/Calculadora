@@ -2,18 +2,8 @@ let v1 = 0;
 let v2 = 0;
 let output = document.querySelector(".inputOut");
 const btnEqual = document.querySelector(".result");
-//Valores dos numeros captando pelo ID
-const btnKeys = [
-    document.getElementById("1").value = 1,
-    document.getElementById("2").value = 2,
-    document.getElementById("3").value = 3,
-    document.getElementById("4").value = 4,
-    document.getElementById("5").value = 5,
-    document.getElementById("6").value = 6,
-    document.getElementById("7").value = 7,
-    document.getElementById("8").value = 8,
-    document.getElementById("9").value = 9
-];
+//Valores dos numeros
+const btnKeys = document.querySelectorAll(".insert");
 
 //SOMA
 function sum(value1 = v1, value2 = v2) {
@@ -37,7 +27,7 @@ function div(value1 = v1, value2 = v2) {
 
 //Ajustar para cada botão ser reconhecido individualmente
 function insertKey() {
-    console.log(btnKeys);
+    console.log(btnKeys[0].textContent);
 }
 
 function equalButton() {
