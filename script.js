@@ -4,31 +4,49 @@ let output = document.querySelector(".inputOut");
 const btnEqual = document.querySelector(".result");
 //Valores dos numeros
 const btnKeys = document.querySelectorAll(".insert");
+//Variaveis dos operadores
+const keySum = document.getElementById("plus");
+const keySub = document.getElementById("minus");
+const keyMulti = document.getElementById("times");
+const keyDiv = document.getElementById("split");
 
 //SOMA
 function sum(value1, value2) {
+  output.value += keySum.textContent;
   console.log(value1 + value2);
 }
 
 //SUBTRAÇÃO
 function sub(value1, value2) {
+  output.value += keySub.textContent;
   console.log(value1 - value2);
 }
 
 //MULTIPLICAÇÃO
 function multi(value1, value2) {
+  output.value += keyMulti.textContent;
   console.log(value1 * value2);
 }
 
 //DIVISÃO
 function div(value1, value2) {
+  output.value += keyDiv.textContent;
   console.log(value1 / value2);
 }
 
-//Ajustar para cada botão ser reconhecido individualmente
-function insertKey() {
-    console.log(btnKeys[0].textContent);
-}
+//Arrows functions para exibir os botoes no output
+const key0 = () => output.value += btnKeys[10].textContent
+const key1 = () => output.value += btnKeys[0].textContent;
+const key2 = () => output.value += btnKeys[1].textContent;
+const key3 = () => output.value += btnKeys[2].textContent;
+const key4 = () => output.value += btnKeys[3].textContent;
+const key5 = () => output.value += btnKeys[4].textContent;
+const key6 = () => output.value += btnKeys[5].textContent;
+const key7 = () => output.value += btnKeys[6].textContent;
+const key8 = () => output.value += btnKeys[7].textContent;
+const key9 = () => output.value += btnKeys[8].textContent;
+const keyComma = () => output.value += btnKeys[9].textContent;
+const clearOut = () => output.value = null;
 
 function equalButton() {
   output.value = 0;
