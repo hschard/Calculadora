@@ -10,10 +10,34 @@ const keySub = document.getElementById("minus");
 const keyMulti = document.getElementById("times");
 const keyDiv = document.getElementById("split");
 
+
+//Verifica se os dois valores foram preenchidos corretamente
+function verifValor(v1, v2) {
+  if (v1 != null || v2 != null) {
+   
+  }else {
+    alert("Informe um valor!");
+  }
+
+}
+
 //SOMA
 function sum(value1, value2) {
-  output.value += keySum.textContent;
-  console.log(value1 + value2);
+  value1 = parseFloat(output.value) 
+  //Verifica se o primeiro numero foi preenchido
+  if (value1 != null) {
+    output.value = null;
+    output.value += keySum.textContent;  
+  }
+  value2 = parseFloat(output.value);
+
+  //Aplica a verificao de valores
+  //verifValor(value1, value2);
+  console.log(value1);
+  console.log(value2);
+  
+  //Realiza a soma
+  //output.value = (value1 + value2);
 }
 
 //SUBTRAÇÃO
